@@ -1,2 +1,1 @@
-python3 -m http.server
-
+go run web_server.go
