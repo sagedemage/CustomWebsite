@@ -1,3 +1,3 @@
-module example/web_server
+module example/http_server
 
 go 1.18
