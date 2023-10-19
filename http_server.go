@@ -14,7 +14,8 @@ func http_logger(handler http.Handler) http.Handler {
 }
 
 func main() {
+	var handler = http.NewServeMux()
 	fmt.Println("Serving HTTP on http://127.0.0.1:8000")
-	http.Handle("/", http.FileServer(http.Dir("./static")))
-	http.ListenAndServe(":8000", http_logger(http.DefaultServeMux))
+	handler.Handle("/", http.FileServer(http.Dir("./static")))
+	http.ListenAndServe(":8000", http_logger(handler))
 }
