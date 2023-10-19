@@ -1,2 +1,2 @@
-# CustomWebsite
-CustomWebsite with no libraries and framework.
+# Custom Website
+Custom website with no libraries and framework.
